@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КнигаМания</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/logo.png" alt="Логотип" class="logo-img">
+                <h1>КнигаМания</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#books"><i class="fas fa-book"></i> Книги</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content" data-aos="fade-up">
+                <h2>Добро пожаловать в мир книг</h2>
+                <p>Погрузитесь в увлекательный мир литературы и аудиокниг</p>
+                <div class="hero-buttons">
+                    <a href="#books" class="btn primary-btn">Начать чтение</a>
+                    <a href="#books" class="btn secondary-btn">Слушать аудио</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="books" class="content-section">
+            <h2 data-aos="fade-up">Наша библиотека</h2>
+            <div class="books-grid" id="booksContainer">
+                <!-- Книги будут добавлены через JavaScript -->
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2 data-aos="fade-up">О нас</h2>
+            <div class="about-content" data-aos="fade-up">
+                <div class="about-text">
+                    <p>КнигаМания - это ваш персональный портал в мир литературы. Мы собрали лучшие произведения классиков и современников, чтобы вы могли наслаждаться чтением в любое время.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-book-reader"></i>
+                            <h3>Читайте</h3>
+                            <p>Доступ к огромной библиотеке книг</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-headphones"></i>
+                            <h3>Слушайте</h3>
+                            <p>Аудиокниги для вашего удобства</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-download"></i>
+                            <h3>Скачивайте</h3>
+                            <p>Материалы доступны офлайн</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="globalAudioPlayer" class="audio-player hidden">
+        <div class="player-controls">
+            <button id="prevTrack" class="control-btn"><i class="fas fa-backward"></i></button>
+            <button id="playPause" class="control-btn"><i class="fas fa-play"></i></button>
+            <button id="nextTrack" class="control-btn"><i class="fas fa-forward"></i></button>
+        </div>
+        <div class="track-info">
+            <h3 id="trackTitle">Выберите Аудио</h3>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <div class="time-info">
+                <span id="currentTime">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Логотип" class="footer-logo-img">
+                <h2>КнигаМания</h2>
+            </div>
+            <p>&copy; 2024 КнигаМания. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

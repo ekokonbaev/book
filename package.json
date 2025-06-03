@@ -1,0 +1,12 @@
+{
+  "name": "media-library",
+  "version": "1.0.0",
+  "description": "Веб-сайт для просмотра книг и прослушивания аудио",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+} 
